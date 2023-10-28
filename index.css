@@ -1,0 +1,42 @@
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .home-main-section .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end; /* paei ta grammata dejia*/
+  }
+  
+  .home-main-section .brush-image { /*backround image*/
+    background-image: url(images/brushes.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain; /* fit entire pic without cropping anything*/
+    background-repeat: no-repeat; /* only show up once*/
+    background-position: bottom left; /* pou tha einai*/
+  }
+  
+  .home-main-section .call-to-action {
+    display: flex; /* ola stin seira*/
+    flex-direction: column; /*ola katheta*/
+    align-items: flex-start; /* gia na min pianoun olo to xoro*/
+    margin: 1rem; /*xvros apo thn eikona*/
+    align-self: center; /*ta bazei sto kentro*/
+  }
+  
+  @media (max-width: 900px) { /*pote feygei h eikona giati den fainetai vraia (900px or less)*/
+    .home-main-section .img-wrapper {
+      display: none;
+    }
+  
+    .home-main-section {
+      justify-content: center; /*ta bazei pali kentro afou figei h eikona*/
+    }
+  }
