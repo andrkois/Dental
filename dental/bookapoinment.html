@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <title>Sofia Koi</title>
+  <style>
+       .calendar-table {
+            border-collapse: collapse;
+            background-color: #0080FF;
+            width: 200px;
+        }
+        .calendar {
+            text-align: center;
+            margin: 0;
+        }
+
+        .calendar-table {
+            border-collapse: collapse;
+            background-color: #FFFFFF;
+            width: 200px;
+        }
+
+        .calendar-table caption {
+            font-size: 20px;
+            margin-bottom: 10px;
+            background-color: #008000;
+            color: #FFFFFF;
+            padding: 10px;
+        }
+
+        .calendar-table th,
+        .calendar-table td {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #5ea87b;
+        }
+
+        .calendar-table td {
+            background-color: #08e980;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FFFFFF;
+            min-width: 160px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .book-appointment-button {
+            color: #008000;
+            border: 1px solid #008000;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 5px 10px;
+            margin-top: 15px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .dropdown {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100px;
+            background-color: #0abf53;
+        }
+
+        .dropdown li {
+            position: relative;
+        }
+
+        .dropdown li a {
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown li ul {
+            position: absolute;
+            top: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: none;
+            line-height: normal;
+            background-color: #333;
+        }
+
+        .dropdown li ul li a {
+            text-align: left;
+            color: #cccccc;
+            font-size: 14px;
+            padding: 10px;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .dropdown li ul li a:hover {
+            background-color: #0abf53;
+            color: #ffffff;
+        }
+
+        .dropdown li ul li ul {
+            left: 100%;
+            top: 0;
+        }
+
+        ul li:hover>a {
+            background-color: #0abf53;
+            color: #ffffff !important;
+        }
+
+        ul li:hover>ul {
+            display: block;
+        }
+        .parallelogram-table {
+            display: inline-block;
+            transform: skew(15deg);
+        }
+
+        .parallelogram-table table {
+            transform: skew(-15deg);
+        }
+
+        .parallelogram-table td {
+            padding: 10px;
+        }
+
+        .parallelogram-button {
+            background-color: #06a71c;
+            color: white;
+            border: none;
+            padding: 10px;
+            transform: skew(0deg);
+            cursor: pointer;
+            white-space: nowrap;
+        }
+  </style>
+</head>
+<body class="container full-height-grow">
+  <header class="main-header">
+    <a href="/" class="brand-logo">
+      <img src="images/logo.png" width="40" height="40">
+      <div class="brand-logo-name">Sofia Koi Kai SIA O.E.</div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="discover.html">Info</a></li>
+        <li><a href="https://detfolio.dmst.aueb.gr/students2021/andrkois/inetpub/bookapoinment.html" class="btnlog"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="home-main-section">
+    <div class="call-to-action">
+        <form style="margin-left: 280px;">
+            <h2 style="color:#000000;">Book Appointment</h2>
+            <table class="calendar-table">
+                <caption> <    October 2023   > </October>     </caption>
+              <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td><button class="day-button">25</button></td>
+                    <td><button class="day-button">26</button></td>
+                    <td><button class="day-button">27</button></td>
+                    <td><button class="day-button">28</button></td>
+                    <td><button class="day-button">29</button></td>
+                    <td><button class="day-button">30</button></td>
+                    <td><button class="day-button">1</button></td>
+                </tr>
+                <tr>
+                    <td><button class="day-button">2</button></td>
+                    <td><button class="day-button">3</button></td>
+                    <td><button class="day-button">4</button></td>
+                    <td><button class="day-button">5</button></td>
+                    <td><button class="day-button">6</button></td>
+                    <td><button class="day-button">7</button></td>
+                    <td><button class="day-button">8</button></td>
+                </tr>
+                <tr>
+                    <td><button class="day-button">9</button></td>
+                    <td><button class="day-button">10</button></td>
+                    <td><button class="day-button">11</button></td>
+                    <td><button class="day-button">12</button></td>
+                    <td><button class="day-button">13</button></td>
+                    <td><button class="day-button">14</button></td>
+                    <td><button class="day-button">15</button></td>
+                </tr>
+                <tr>
+                    <td><button class="day-button">16</button></td>
+                    <td><button class="day-button">17</button></td>
+                    <td><button class="day-button">18</button></td>
+                    <td><button class="day-button">19</button></td>
+                    <td><button class="day-button">20</button></td>
+                    <td><button class="day-button">21</button></td>
+                    <td><button class="day-button">22</button></td>
+                </tr>
+                <tr>
+                    <td><button class="day-button">23</button></td>
+                    <td><button class="day-button">24</button></td>
+                    <td><button class="day-button">25</button></td>
+                    <td><button class="day-button">26</button></td>
+                    <td><button class="day-button">27</button></td>
+                    <td><button class="day-button">28</button></td>
+                    <td><button class="day-button">29</button></td>
+                </tr>
+                <tr>
+                    <td><button class="day-button">30</button></td>
+                    <td><button class="day-button">31</button></td>
+                    <td><button class="day-button">1</button></td>
+                    <td><button class="day-button">2</button></td>
+                    <td><button class="day-button">3</button></td>
+                    <td><button class="day-button">4</button></td>
+                    <td><button class="day-button">5</button></td>
+                </tr>
+           
+            </table>
+            <ul class="dropdown">
+                <li><a href="#">Book Now</a>
+                    <ul>
+                        <li><a href="#">Select Time</a>
+                            <div class="parallelogram-table">
+                                <table>
+                                    <tr>
+                                        <td><button class="parallelogram-button">9-10</button></td>
+                                        <td><button class="parallelogram-button">10-11</button></td>
+                                        <td><button class="parallelogram-button">11-12</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="parallelogram-button">12-13</button></td>
+                                        <td><button class="parallelogram-button">13-14</button></td>
+                                        <td><button class="parallelogram-button">14-15 </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="parallelogram-button">15-16</button></td>
+                                        <td><button class="parallelogram-button">16-17</button></td>
+                                        <td><button class="parallelogram-button">closed</button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li><a href="#">Select Dentist</a>
+                            <ul>
+                                <li><a href="#">Dr. Sophia Koi</a></li>
+                                <li><a href="#">Dr. Dafni Koi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            
+            
+             <button class="book-appointment-button">Book Your Appointment</button>
+           
+        </form>
+    </div>
+  </section>
+</body>
+</html>

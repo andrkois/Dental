@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #B6B6B6;
+  background: url(images/brushbackround.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: Itim, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  min-height: 100vh; /* na blepo oli thn othoni*/
+}
+
+.full-height-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo {
+  display: flex; /* to ena dipla sto allo*/
+  align-items: center; /* ta grammata sthn idia grammh*/
+  font-size: 1.25em; /*megethos grammaton*/
+  color: inherit; /* xroma grammaton*/
+  text-decoration: none;
+}
+
+.brand-logo-name {
+  margin-left: 1rem; /*poso apexei to logo apo to onoma*/
+}
+
+.main-nav ul, .footer-nav ul {
+  display: flex; /*to ena dipla sto allo*/
+  margin: 0;
+  padding: 0;
+  list-style: none; /*bgazei tis voules apo to list*/
+}
+
+.main-nav a, .footer-nav a {
+  color: inherit; /*aspra*/
+  text-decoration: none; /*remove underline*/
+  padding: 1rem; /*dinei xvro*/ 
+}
+
+.main-nav a:hover, .footer-nav a:hover  {
+  color: #adadad; /*otan pas panv na allazei xroma*/
+}
+
+.main-header, .main-footer {
+  display: flex; /*bazei olo to header/footer sthn seira*/
+  justify-content: space-between; /*as far as possible*/
+  align-items: center;
+}
+
+.main-header {
+  height: 140px; /*to jekolaei apo pano*/
+}
+
+.main-footer {
+  height: 70px;
+  background-color: #202027;
+  font-weight: bold;
+}
+
+.social-link img {
+  width: 1em;
+  margin-right: .25rem;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px; /*bazei xoro dejia aristera gia to body*/
+  margin: 0 auto;
+  padding: 0 40px; /*bazei xoro dejia aristera*/
+  flex-grow: 1;
+}
+
+.title { /*ti simainei titlos*/
+  font-weight: 500;
+  font-size: 2.2em;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.subtitle { /*ti simainei ipotitlos*/
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+}
+
+.btn { /*ti simainei button*/ 
+  color: white; /*xroma gia grammata*/
+  background-color: #132533; /*xroma koumpiou*/
+  padding: .75rem 1.5rem;
+  border-radius: .5rem; /*round corners*/
+  text-decoration: none;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2180d8;
+}
+
+.btn:focus {
+  background-color: #2796ff;
+}
+
+.btnem {
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(15, 33, 49, 0.72);
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .7rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btnem:hover {
+    background-color: #d82164;
+  }
+  
+  .btnem:focus {
+    background-color: #d82164;
+  }
+
+  .btnlog {
+    color: white;
+    background-color: #132533;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btnlog:hover {
+    background-color: #d82164;
+  }
+  
+  .btnlog:focus {
+    background-color: #d82164;
+  }
