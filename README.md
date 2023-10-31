@@ -2,7 +2,9 @@
 
 ## HTML
 index.html: html for the landing page
+
 diagnosis.html: lito's html for diagnosis page
+
 diagn.html: lito's html for diagnosis page with a correction in the header
 
 ## CSS
